@@ -1,0 +1,44 @@
+.top {
+  align-self: start;
+}
+
+.middle {
+  align-self: center;
+  order: 1;
+}
+
+.bottom {
+  align-self: end;
+}
+
+.right {
+  align-self: end;
+  margin-left: auto;
+  order: 2;
+}
+
+.left {
+  align-self: start;
+  margin-right: auto;
+  order: 0;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.direction-row {
+  flex-direction: row;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.display-grid {
+  display: grid;
+}
