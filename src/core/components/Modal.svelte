@@ -47,11 +47,12 @@
 
   const onCancel = () => {
     visible = !visible;
-    emit('cancel', { identifier });
+    emit('cancel', { identifier, modal: 'cancel', name: 'cancel' });
   };
 
   const onConfirm = () => {
-    onCancel();
+    visible = !visible;
+    emit('confirm', { identifier, modal: 'confirm', name: 'confirm' });
   };
 
   const handleKeydown = (e) => {
@@ -59,7 +60,6 @@
     switch (keyCode) {
       case 13:
       case 27:
-      case undefined:
         onCancel();
       default:
         break;

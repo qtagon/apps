@@ -33,13 +33,10 @@
 
   .media {
     display: flex;
-
+    margin: 0 1.875rem 1.875rem 0;
+    
     & > :global(.image) {
       align-self: initial;
-    }
-
-    &:not(:last-child) {
-      margin: 0 1.125rem 0 0;
     }
 
     &.pointer {

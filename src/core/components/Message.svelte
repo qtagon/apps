@@ -39,6 +39,12 @@
     display: flex;
     flex-direction: column;
 
+    &.content-center {
+      & > .content {
+        align-items: center;
+      }
+    }
+
     & > .content {
       display: flex;
       flex-direction: column;

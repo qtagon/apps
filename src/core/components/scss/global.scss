@@ -1,5 +1,6 @@
 :global(*) {
-  transition: 0.15s color ease-out, 0.15s background ease-out , box-shadow 0.15s ease 0s;
+  transition: 0.15s color ease-out, 0.15s background ease-out,
+    box-shadow 0.15s ease 0s;
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Source Sans Pro', 'Segoe UI',
@@ -12,7 +13,7 @@
   height: 100%;
   padding: 0;
   margin: 0;
-  background: #f7f7f7;
+  background: #ffffff;
 }
 
 :global(main) {
@@ -61,6 +62,26 @@
 
     &.display-grid {
       display: grid;
+    }
+
+    &.height-auto {
+      height: auto;
+    }
+
+    &.background-white {
+      background: #ffffff;
+    }
+
+    &.background-gray {
+      background: #f7f7f7;
+    }
+
+    &.align-center {
+      align-items: center;
+    }
+
+    &.justify-center {
+      justify-content: center;
     }
 
     & > .scroller-container {

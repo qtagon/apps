@@ -72,7 +72,8 @@
 {#each dynamic.getComponents('modal') as component (component.identifier)}
   <svelte:component
     this={components[component.type]}
-    on:search={onSearchEvent}
+    on:cancel={onEvent}
+    on:confirm={onEvent}
     {...component} />
 {/each}
 
